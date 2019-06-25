@@ -1,9 +1,26 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 #container {
     display: grid;
-    grid-template-columns: repeat(16);
-    grid-template-rows: repeat(16);
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(16, auto);
+    grid-template-rows: repeat(16, auto);
 }
 
 .gridItem {
     border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#on {
+    background-color: black;
+}
+
+#off {
+    background-color: white;
 }
